@@ -76,7 +76,7 @@ public:
 		cout << "Move Assignment Operator..." << endl;
 		if(this != &a){
 			size = a.size;
-			data = new int[size];
+			data = a.data;
 			a.data = nullptr;
 		}
 		return *this;
